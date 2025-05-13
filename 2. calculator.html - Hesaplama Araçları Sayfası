@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Tools</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Calculator Tools</h1>
+    <p>Select a calculator and perform calculations.</p>
+  </header>
+
+  <!-- Basic Calculator -->
+  <section id="basic-calculator">
+    <h2>Basic Calculator</h2>
+    <input type="number" id="num1" placeholder="Number 1" required>
+    <input type="number" id="num2" placeholder="Number 2" required>
+    <button onclick="calculate()">Calculate</button>
+    <p id="basic-result"></p>
+  </section>
+
+  <!-- Interest Calculator -->
+  <section id="interest-calculator">
+    <h2>Interest Calculator</h2>
+    <input type="number" id="principal" placeholder="Principal Amount" required>
+    <input type="number" id="rate" placeholder="Interest Rate (%)" required>
+    <input type="number" id="time" placeholder="Time (years)" required>
+    
+    <button onclick="calculateSimpleInterest()">Calculate Simple Interest</button>
+    <p id="interest-result"></p>
+
+    <label for="compound-frequency">Compound Frequency (per year):</label>
+    <select id="compound-frequency">
+      <option value="1">Annually</option>
+      <option value="2">Semi-Annually</option>
+      <option value="4">Quarterly</option>
+      <option value="12">Monthly</option>
+    </select>
+    
+    <button onclick="calculateCompoundInterest()">Calculate Compound Interest</button>
+    <p id="compound-interest-result"></p>
+    <p id="compound-total"></p>
+  </section>
+
+  <!-- Date Difference Calculator -->
+  <section id="date-calculator">
+    <h2>Date Difference</h2>
+    <input type="date" id="start-date" required>
+    <input type="date" id="end-date" required>
+    <button onclick="calculateDateDifference()">Calculate</button>
+    <p id="date-diff-result"></p>
+  </section>
+
+  <!-- Distance Between Cities Calculator -->
+  <section id="distance-calculator">
+    <h2>Distance Between Two Cities</h2>
+    <input type="text" id="city1" placeholder="City 1" required>
+    <input type="text" id="city2" placeholder="City 2" required>
+    <button onclick="calculateDistance()">Calculate</button>
+    <p id="distance-result"></p>
+  </section>
+
+  <!-- Travel Time Calculator -->
+  <section id="time-calculator">
+    <h2>Travel Time Calculator (100 km/h)</h2>
+    <input type="text" id="start-city" placeholder="Start City" required>
+    <input type="text" id="end-city" placeholder="End City" required>
+    <button onclick="calculateTravelTime()">Calculate</button>
+    <p id="travel-time-result"></p>
+  </section>
+
+  <footer>
+    <p>Developed by Your Name</p>
+  </footer>
+
+  <script src="js/calculator.js"></script>
+  <script src="js/interest.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/distance.js"></script>
+  <script src="js/time.js"></script>
+</body>
+</html>
