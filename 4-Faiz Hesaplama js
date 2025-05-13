@@ -1,0 +1,23 @@
+// Basit faiz hesaplama
+function calculateSimpleInterest() {
+  const principal = parseFloat(document.getElementById('principal').value);
+  const rate = parseFloat(document.getElementById('rate').value) / 100;
+  const time = parseFloat(document.getElementById('time').value);
+  
+  // Basit faiz formülü
+  const simpleInterest = (principal * rate * time);
+  document.getElementById('interest-result').textContent = "Simple Interest: " + simpleInterest.toFixed(2);
+}
+
+// Bileşik faiz hesaplama
+function calculateCompoundInterest() {
+  const principal = parseFloat(document.getElementById('principal').value);
+  const rate = parseFloat(document.getElementById('rate').value) / 100;
+  const time = parseFloat(document.getElementById('time').value);
+  const n = parseFloat(document.getElementById('compound-frequency').value);  // Yılda faiz hesaplanma sayısı
+  
+  const compoundAmount = principal * Math.pow((1 + rate / n), n * time);
+  
+  document.getElementById('compound-interest-result').textContent = "Compound Interest: " + (compoundAmount - principal).toFixed(2);
+  document.getElementById('compound-total').textContent = "Total Amount: " + compoundAmount.toFixed(2);
+}
