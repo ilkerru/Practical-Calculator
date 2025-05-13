@@ -1,6 +1,17 @@
 # Usage Guide for Practical Calculator Tools
 
 This document provides a step-by-step guide on how to use the various calculation tools provided in the **Practical Calculator** web application.
+Explanation of Sections:
+
+    Basic Calculator: A brief guide on how to use the basic calculator for simple arithmetic operations.
+
+    Interest Calculator: Instructions on how to calculate simple and compound interest, including input fields and results.
+
+    Date Difference Calculator: A guide for users to calculate the number of days between two dates.
+
+    Distance Between Two Cities Calculator: Provides a way to estimate the distance between two cities.
+
+    Travel Time Calculator: Instructions on how to calculate travel time between two cities, assuming a constant speed of 100 km/h.
 
 ## 1. **Basic Calculator**
 
