@@ -1,0 +1,11 @@
+function calculateTravelTime() {
+  const startCity = document.getElementById('start-city').value;
+  const endCity = document.getElementById('end-city').value;
+  
+  const distance = 100;  // Örnek mesafe (km cinsinden)
+  const speed = 100;  // Seyahat hızı (km/saat)
+  
+  const travelTime = distance / speed;  // Saat cinsinden seyahat süresi
+  
+  document.getElementById('travel-time-result').textContent = "Travel time from " + startCity + " to " + endCity + " is " + travelTime + " hours.";
+}
