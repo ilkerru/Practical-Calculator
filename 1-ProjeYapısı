@@ -1,0 +1,11 @@
+calculator/
+├── index.html          # Ana sayfa (Hesaplama araçları bağlantısı)
+├── calculator.html     # Hesaplama araçlarının bulunduğu sayfa
+├── js/
+│   ├── calculator.js   # Hesaplama işlemleri
+│   ├── interest.js     # Faiz hesaplama işlemleri
+│   ├── date.js         # Tarih farkı hesaplama
+│   ├── distance.js     # İki şehir arasındaki mesafe hesaplama
+│   └── time.js         # Seyahat süresi hesaplama
+├── css/
+│   └── style.css       # Stil dosyası
